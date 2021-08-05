@@ -1,22 +1,34 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "kenzie.ink",
+    siteUrl: 'https://kenzie.ink',
+    title: 'kenzie.ink',
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: "UA-70354602-1",
+        trackingId: 'UA-70354602-1',
       },
     },
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-google-fonts',
       options: {
-        icon: "src/images/icon.png",
+        fonts: [
+          'Assistant:wght@300;400',
+          'Source+Code+Pro:wght@400',
+          'Material+Icons',
+        ],
+        display: 'swap',
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/icon.png',
+      },
+    },
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-sitemap',
   ],
-};
+}
