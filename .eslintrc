@@ -1,0 +1,88 @@
+{
+  "env": {
+    "browser" : true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "standard",
+    "standard-react"
+  ],
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "17.0.1"
+    }
+  },
+  "plugins": [
+    "react",
+    "standard"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "array-bracket-newline": ["error", "consistent"],
+    "arrow-parens": ["error", "always"],
+    "brace-style": ["error", "1tbs"],
+    "comma-dangle": ["error", "always-multiline"],
+    "curly": ["error", "all"],
+    "indent": ["error", 2, {
+      "ignoredNodes": [
+        "JSXElement",
+        "JSXElement > *",
+        "JSXAttribute",
+        "JSXIdentifier",
+        "JSXNamespacedName",
+        "JSXMemberExpression",
+        "JSXSpreadAttribute",
+        "JSXExpressionContainer",
+        "JSXOpeningElement",
+        "JSXClosingElement",
+        "JSXText",
+        "JSXEmptyExpression",
+        "JSXSpreadChild"
+      ]
+    }],
+    "jsx-quotes": ["error", "prefer-single"],
+    "key-spacing": ["error", { "mode": "strict" }],
+    "lines-between-class-members": "off",
+    "max-len": ["error", 120, 2],
+    "no-console": "warn",
+    "no-multi-spaces": "error",
+    "no-unreachable": "off",
+    "no-use-before-define": "error",
+    "object-curly-spacing": ["error", "always"],
+    "object-shorthand": ["error", "always"],
+    "operator-linebreak": ["error", "after"],
+    "prefer-template": "warn",
+    "require-yield": "off",
+    "semi": ["error", "never"],
+
+    "react/jsx-closing-tag-location": "error",
+    "react/jsx-closing-bracket-location": ["error", "line-aligned"],
+    "react/jsx-first-prop-new-line": ["error", "multiline"],
+    "react/jsx-fragments": ["error", "element"],
+    "react/jsx-handler-names": 0,
+    "react/jsx-indent": [1, 2, {
+      "checkAttributes": true,
+      "indentLogicalExpressions": true
+    }],
+    "react/jsx-indent-props": ["error", 2],
+    "react/jsx-max-props-per-line": ["error", { "maximum": 1 }],
+    "react/jsx-props-no-multi-spaces": "off",
+    "react/jsx-wrap-multilines": ["error", {
+      "declaration": "parens-new-line",
+      "assignment": "parens-new-line",
+      "return": "parens-new-line",
+      "arrow": "parens-new-line",
+      "condition": "parens-new-line",
+      "logical": "parens-new-line",
+      "prop": "parens-new-line"
+    }]
+  }
+}
