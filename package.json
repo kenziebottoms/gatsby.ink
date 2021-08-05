@@ -8,6 +8,7 @@
     "gatsby"
   ],
   "scripts": {
+    "dev": "npm run develop",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
