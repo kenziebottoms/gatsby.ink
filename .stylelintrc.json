@@ -2,6 +2,7 @@
   "extends": [
     "stylelint-config-sass-guidelines"
   ],
+  "ignoreFiles": ["**/*.js"],
   "rules": {
     "block-opening-brace-space-before": "always",
     "block-no-empty": true,
@@ -14,18 +15,17 @@
     "function-comma-space-after": "always",
     "function-parentheses-space-inside": "never",
     "function-url-quotes": "always",
-    "indentation": [2, {
-      "indentClosingBrace": false
-    }],
+    "indentation": [2, { "indentClosingBrace": false }],
     "max-empty-lines": 1,
-    "max-nesting-depth": [
-      4,
-      {
-        "severity": "warning"
-      }
-    ],
+    "max-nesting-depth": [4, { "severity": "warning" }],
     "no-extra-semicolons": true,
     "number-leading-zero": "always",
+    "selector-class-pattern": null,
+    "selector-max-compound-selectors": [5, { "severity": "warning" }],
+    "selector-max-id": 1,
+    "selector-no-qualifying-type": null,
+    "string-quotes": "single",
+    
     "order/order": [
       "declarations",
       "dollar-variables",
@@ -36,20 +36,7 @@
       "rules"
     ],
     "order/properties-alphabetical-order": true,
-    "scss/at-extend-no-missing-placeholder": [
-      true,
-      {
-        "severity": "warn"
-      }
-    ],
-    "selector-class-pattern": null,
-    "selector-max-compound-selectors": [
-      5,
-      {
-        "severity": "warning"
-      }
-    ],
-    "selector-no-qualifying-type": null,
-    "string-quotes": "single"
+
+    "scss/at-extend-no-missing-placeholder": [true, { "severity": "warning" }]
   }
 }
