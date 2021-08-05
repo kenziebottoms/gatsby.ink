@@ -1,0 +1,50 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "array-element-newline": ["error", { "multiline": true, "minItems": 3 }],
+    "brace-style": ["error", "1tbs"],
+    "comma-dangle": ["error", "never"],
+    "eqeqeq": "error",
+    "indent": ["error", 2],
+    "jsx-quotes": ["error", "prefer-single"],
+    "key-spacing": ["error", { "mode": "strict" }],
+    "linebreak-style": ["error", "unix"],
+    "max-len": ["error", { "code": 80, "ignoreComments": false }],
+    "multiline-comment-style": ["error", "starred-block"],
+    "no-extra-parens": "error",
+    "no-multi-spaces": "error",
+    "no-shadow": "error",
+    "object-curly-spacing": ["error", "always"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
+    "space-in-parens": ["error", "never"],
+    "space-infix-ops": "error",
+    "react/jsx-closing-bracket-location": ["error", "tag-aligned"],
+    "react/jsx-first-prop-new-line": ["error", "multiline"],
+    "react/jsx-max-props-per-line": ["error", { "maximum": 2 }],
+    "react/jsx-no-target-blank": "off",
+    "react/jsx-props-no-multi-spaces": "error",
+    "react/no-adjacent-inline-elements": "off",
+    "react/no-multi-comp": "error",
+    "react/no-unescaped-entities": ["error", { "forbid": [">", "<"] }],
+    "react/prop-types": "off",
+    "yoda": ["error", "never"]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
