@@ -1,15 +1,16 @@
 import React from 'react'
 
+import ExternalLink from '../ExternalLink'
+
 import './index.scss'
 
 const Copyright = () => (
-  <a
+  <ExternalLink
     id='copyright'
     href='https://github.com/kenziebottoms/kenziebottoms.github.io'
-    target='blank'
   >
     Source on GitHub
-  </a>
+  </ExternalLink>
 )
 
 export default Copyright

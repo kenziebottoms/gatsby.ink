@@ -24,11 +24,25 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/icon.png',
+        icon: 'favicon.ico',
       },
     },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-typescript',
+      options: {
+        transpileOnly: true,
+        isTSX: true, // defaults to false
+        jsxPragma: 'jsx', // defaults to "React"
+        allExtensions: true, // defaults to false
+      },
+      compilerOptions: {
+        jsx: 'react',
+        experimentalDecorators: true,
+        target: 'esnext',
+      },
+    },
   ],
 }

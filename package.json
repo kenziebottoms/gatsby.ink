@@ -8,7 +8,6 @@
     "gatsby"
   ],
   "scripts": {
-    "dev": "npm run develop",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
@@ -16,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-config-standard-react": "^11.0.1",
     "eslint-plugin-react": "^7.24.0",
@@ -27,6 +27,7 @@
     "gatsby-plugin-react-helmet": "^4.11.0",
     "gatsby-plugin-sass": "^4.11.0",
     "gatsby-plugin-sitemap": "^4.7.0",
+    "gatsby-plugin-typescript": "^3.11.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",

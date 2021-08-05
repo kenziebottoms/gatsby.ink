@@ -1,11 +1,11 @@
 import React from 'react'
 
 const ExternalLink = ({
-  href,
   children,
+  ...passThruProps
 }) => (
   <a
-    href={href}
+    {...passThruProps}
     target='_blank'
     rel='noopener noreferrer'
   >

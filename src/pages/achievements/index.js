@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Page from '../../components/Page'
+import ExternalLink from '../../elements/ExternalLink'
 import Feat from './Feat'
 
 import './index.scss'
@@ -11,13 +12,12 @@ const feats = [
     icon: 'military_tech',
     description: [
       'Be awarded Most Valuable ',
-      <a
+      <ExternalLink
         key={1}
         href='https://en.wikipedia.org/wiki/Roller_derby#Basics_of_play'
-        target='blank'
       >
         Jammer
-      </a>,
+      </ExternalLink>,
       ' in a derby bout.',
     ],
   },
@@ -26,13 +26,12 @@ const feats = [
     icon: 'chrome_reader_mode',
     description: [
       'Beat ',
-      <a
+      <ExternalLink
         key={1}
         href='https://nanowrimo.org/about'
-        target='blank'
       >
         NaNoWriMo
-      </a>,
+      </ExternalLink>,
       '.',
     ],
   },
@@ -46,13 +45,12 @@ const feats = [
     icon: 'keyboard',
     description: [
       'Write 20 aliases for ',
-      <a
+      <ExternalLink
         key={1}
         href='https://ohmyz.sh/'
-        target='blank'
       >
         Zsh
-      </a>,
+      </ExternalLink>,
       '.',
     ],
   },
@@ -66,13 +64,12 @@ const feats = [
     icon: 'stars',
     description: [
       'Score 20 points in ',
-      <a
+      <ExternalLink
         key={1}
         href='https://en.wikipedia.org/wiki/Roller_derby#Jams'
-        target='blank'
       >
         one jam
-      </a>,
+      </ExternalLink>,
       '.',
     ],
   },
@@ -86,13 +83,12 @@ const feats = [
     icon: 'toys',
     description: [
       'Earn 5000 points in the ',
-      <a
+      <ExternalLink
         key={1}
-        target='blank'
         href='https://www.gish.com/'
       >
         Greatest International Scavenger Hunt
-      </a>,
+      </ExternalLink>,
       '.',
     ],
   },
@@ -106,13 +102,12 @@ const feats = [
     icon: 'functions',
     description: [
       'Solve 25 problems on ',
-      <a
+      <ExternalLink
         key={1}
         href='https://projecteuler.net/about'
-        target='blank'
       >
         Project Euler
-      </a>,
+      </ExternalLink>,
       '.',
     ],
   },

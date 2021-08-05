@@ -2,6 +2,7 @@ import React from 'react'
 
 import Page from '../../components/Page'
 import Job from '../../components/Job'
+import ExternalLink from '../../elements/ExternalLink'
 
 import './index.scss'
 
@@ -92,13 +93,12 @@ const Resume = () => (
       description={[
         [
           'Responsive custom WordPress themes built with ',
-          <a
+          <ExternalLink
             key={1}
             href='https://roots.io/'
-            target='blank'
           >
             Roots.io
-          </a>,
+          </ExternalLink>,
           '.',
         ],
       ]}
