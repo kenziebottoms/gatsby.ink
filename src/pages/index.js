@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Page from '../components/Page'
+import ExternalLink from '../elements/ExternalLink'
 
 const Home = () => (
   <Page id='home'>
@@ -12,13 +13,9 @@ const Home = () => (
       <p>
         Kenzie Bottoms is a feminist, anti-racist, artist, and developer
         based in Nashville, which is the original homeland of the{' '}
-        <a
-          href='http://www.naiatn.org/support/naia-circle-of-life-donations/'
-          target='_blank'
-          rel='no-referrer noreferrer'
-        >
+        <ExternalLink href='http://www.naiatn.org/support/naia-circle-of-life-donations/'>
           Cherokee, Chickasaw, Shawnee, and Yuchi tribal nations
-        </a>.{' '}
+        </ExternalLink>.{' '}
         <Link to='/pronouns'>They</Link> are passionate about making
         all spaces, professional and otherwise, safe for women and nonbinary
         people, people of color, trans people, disabled people, and
@@ -26,38 +23,22 @@ const Home = () => (
       </p>
       <p>
         They are a jammer for the{' '}
-        <a
-          href='https://www.nashvillerollerderby.com/'
-          target='_blank'
-          rel='no-referrer noreferrer'
-        >
+        <ExternalLink href='https://www.nashvillerollerderby.com/'>
           Nashville Roller Derby
-        </a>{' '}
+        </ExternalLink>{' '}
         Brawl Stars and skate under the name{' '}
-        <a
-          href='https://en.wikipedia.org/wiki/Ellen_Ripley'
-          target='_blank'
-          rel='no-referrer noreferrer'
-        >
+        <ExternalLink href='https://en.wikipedia.org/wiki/Ellen_Ripley'>
           Ellen R.I.P.ley
-        </a>
+        </ExternalLink>
         . They are a full-stack Node.js{' '}
-        <a
-          href='http://nashvillesoftwareschool.com/'
-          target='_blank'
-          rel='no-referrer noreferrer'
-        >
+        <ExternalLink href='http://nashvillesoftwareschool.com/'>
           Nashville Software School
-        </a>{' '}
+        </ExternalLink>{' '}
         graduate, and they are currently cleaning up, maintaining and
         building onto a large React Redux codebase with{' '}
-        <a
-          href='https://www.razorsync.com/'
-          target='_blank'
-          rel='no-referrer noreferrer'
-        >
+        <ExternalLink href='https://www.razorsync.com/'>
           RazorSync
-        </a>
+        </ExternalLink>
         .
       </p>
     </div>
