@@ -17,12 +17,12 @@
     "function-url-quotes": "always",
     "indentation": [2, { "indentClosingBrace": false }],
     "max-empty-lines": 1,
-    "max-nesting-depth": [4, { "severity": "warning" }],
+    "max-nesting-depth": [10, { "severity": "warning" }],
     "no-extra-semicolons": true,
     "number-leading-zero": "always",
     "selector-class-pattern": null,
     "selector-max-compound-selectors": [5, { "severity": "warning" }],
-    "selector-max-id": 1,
+    "selector-max-id": 10,
     "selector-no-qualifying-type": null,
     "string-quotes": "single",
     
@@ -32,8 +32,8 @@
       "at-variables",
       "custom-properties",
       "less-mixins",
-      "at-rules",
-      "rules"
+      "rules",
+      "at-rules"
     ],
     "order/properties-alphabetical-order": true,
 
