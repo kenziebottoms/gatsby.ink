@@ -1,0 +1,120 @@
+@import '../../styles/breakpoints';
+@import '../../styles/colors';
+
+#resume {
+  .year,
+  #green-border,
+  h1 {
+    display: none;
+  }
+
+  article {
+    background: $bg-hhl;
+    display: block;
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+    h3,
+    h4 {
+      margin-bottom: 0.5rem;
+      margin-top: 0;
+    }
+
+    h4 {
+      color: rgba($gray, 0.8);
+    }
+
+    ul {
+      padding-left: 1.25rem;
+
+      li {
+        font-size: 0.9rem;
+      }
+    }
+
+    .tech {
+      font-weight: 100;
+
+      .tag {
+        background: rgba($bg, 0.8);
+        display: inline-block;
+        font-size: 0.8rem;
+        margin: 0.5rem 0.5rem 0 0;
+        padding: 0.25rem 0.5rem;
+      }
+    }
+  }
+  @media (min-width: $md-lg) {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto 0.5rem 1fr 1fr;
+
+    .year {
+      align-items: center;
+      color: rgba($black, 0.4);
+      display: flex;
+      font-size: 2rem;
+      grid-column: 1;
+      grid-row: span 2;
+      height: 5rem;
+      margin-top: -3rem;
+    }
+
+    #green-border {
+      background: $green;
+      display: block;
+      grid-column-start: 2;
+      grid-row: 2 / 20;
+    }
+
+    h1 {
+      display: block;
+    }
+
+    article,
+    h1 {
+      grid-column: span 1;
+      margin: 0;
+
+      &.lane-1 {
+        grid-column-start: 3;
+      }
+
+      &.lane-2 {
+        grid-column-start: 4;
+      }
+
+      &.length-2 {
+        grid-row: span 2;
+      }
+
+      &.length-3 {
+        grid-row: span 3;
+      }
+
+      &.length-4 {
+        grid-row: span 4;
+      }
+
+      &.length-5 {
+        grid-row: span 5;
+      }
+    }
+
+    .align-self-start {
+      align-self: start;
+    }
+
+    .align-self-center {
+      align-self: center;
+    }
+
+    .align-self-end {
+      align-self: end;
+    }
+
+    .placeholder {
+      height: 10rem;
+    }
+  }
+}
