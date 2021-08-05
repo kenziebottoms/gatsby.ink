@@ -3,6 +3,8 @@ import React, { Fragment } from 'react'
 import Sidebar from '../Sidebar'
 import Copyright from '../../elements/Copyright'
 
+import './index.scss'
+
 const Page = ({
   children,
   id,
@@ -18,7 +20,6 @@ const Page = ({
         {children}
         <Copyright />
       </div>
-
     </div>
   </Fragment>
 )

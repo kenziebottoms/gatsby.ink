@@ -3,8 +3,6 @@ import { Link } from 'gatsby'
 
 import Page from '../components/Page'
 
-import '../styles/App.scss'
-
 const Home = () => (
   <Page id='home'>
     <div
