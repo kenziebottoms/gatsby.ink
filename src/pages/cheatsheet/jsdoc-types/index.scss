@@ -1,0 +1,38 @@
+@import '../../../styles/colors';
+@import '../../../styles/fonts';
+@import '../../../styles/presets';
+
+#jsdoc {
+  ul.flex {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+    list-style-type: none;
+
+    li {
+      font-family: $monospace;
+      padding: 0.25rem 1rem;
+      
+      &:nth-child(2n + 1) {
+        background: rgba($green, 0.2);
+      }
+    }
+
+    @extend %blockquote;
+  }
+
+  table {
+    td {
+      padding: 0.75rem 1.25rem;
+
+      &:first-child {
+        white-space: nowrap;
+      }
+
+      &:last-child {
+        font-family: $monospace;
+        font-size: 1rem;
+      }
+    }
+  }
+}

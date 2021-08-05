@@ -1,9 +1,11 @@
 @import 'breakpoints';
 @import 'colors';
+@import 'presets';
+@import 'fonts';
 
 html,
 body {
-  font-family: 'Assistant', sans-serif;
+  font-family: $body-font;
   font-size: 16px;
   margin: auto;
 
@@ -30,24 +32,9 @@ body {
   width: 100%;
 }
 
-%monospace {
-  font-family: 'Source Code Pro', monospace;
-}
-
 pre {
+  font-family: $monospace;
   white-space: pre-wrap;
-  @extend %monospace;
-}
-
-%blockquote {
-  background: rgba($green, 0.15);
-  border-left: 1rem rgba($green, 0.5) solid;
-  font-size: 1.3rem;
-  font-weight: 300;
-  line-height: 1.45;
-  margin: 0;
-  padding: 1rem;
-  padding-left: 1rem;
 }
 
 blockquote {
