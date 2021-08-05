@@ -1,0 +1,60 @@
+@import '../../styles/variables';
+
+#achievements {
+  h1 {
+    grid-column: span 2;
+    margin-top: 0;
+  }
+
+  .achievement {
+    align-items: center;
+    background: $bg-hhl;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1rem;
+    padding: 0.65rem 1rem;
+
+    i {
+      background: $black;
+      border-radius: 3rem;
+      box-sizing: border-box;
+      color: $green;
+      font-size: 2rem;
+      height: 2.85rem;
+      margin-bottom: 0;
+      margin-right: 1rem;
+      padding: 0.4rem;
+      text-align: center;
+      vertical-align: top;
+      width: 2.85rem;
+
+      &.fake-icon {
+        font-style: normal;
+        padding: 0.05rem 0.25rem;
+
+        &.small {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    h3,
+    p {
+      margin: 0.35rem 0;
+    }
+
+    @media (min-width: $sm-md) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $sm-md) {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+
+    .achievement {
+      margin: 0;
+    }
+  }
+}
