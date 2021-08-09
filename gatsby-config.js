@@ -16,9 +16,16 @@ module.exports = {
         fonts: [
           'Assistant:wght@300;400',
           'Source+Code+Pro:wght@400',
-          'Material+Icons',
         ],
         display: 'swap',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          'Material+Icons',
+        ],
       },
     },
     {
