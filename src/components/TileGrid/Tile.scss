@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+
+.tile {
+  background-position: center;
+  background-size: cover;
+  display: block;
+  filter: grayscale(0.8);
+  margin: 0;
+  padding: 0;
+  transition: 0.2s;
+
+  &.code {
+    background-position: top center;
+  }
+
+  &:hover {
+    filter: grayscale(0);
+  }
+
+  .overlay {
+    background: rgba($black, 0.6);
+    box-sizing: border-box;
+    color: $white;
+    font-size: 1.3rem;
+    font-weight: 300;
+    height: 100%;
+    padding: 1rem;
+    text-align: right;
+  }
+}

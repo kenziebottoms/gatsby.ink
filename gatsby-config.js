@@ -51,5 +51,16 @@ module.exports = {
         target: 'esnext',
       },
     },
+    {
+      resolve: 'gatsby-source-google-spreadsheet',
+      options: {
+        spreadsheetId: '1T4CiAnrD1CYl_T5LytMByJdrYIvvRGQWbVIxuDDa2iA',
+        typePrefix: 'GoogleSpreadsheet',
+        spreadsheetName: 'Homepage',
+        credentials: require('./googleCredentials.json'),
+        filterNode: () => true,
+        mapNode: (node) => node,
+      },
+    },
   ],
 }

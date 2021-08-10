@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+
+.tileGrid {
+  display: grid;
+  grid-gap: 1rem;
+  width: 100%;
+
+  blockquote.commissions {
+    align-self: stretch;
+    background: $white;
+    border-color: $green;
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin: 0;
+
+    strong {
+      font-weight: 600;
+    }
+
+    @media (min-width: $sm-md) {
+      grid-column: 1 / -1;
+    }
+    @media (min-width: $lg-xl) {
+      grid-column: 2 / span 2;
+      grid-row: 2;
+    }
+  }
+
+  #copyright {
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: $sm-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: $md-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: $lg-xl) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
