@@ -1,10 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import Page from '../../components/Page'
-import TileGrid from '../../components/TileGrid'
+import Page from '../components/Page'
+import TileGrid from '../components/TileGrid'
 
-import ExternalLink from '../../elements/ExternalLink'
+import ExternalLink from '../elements/ExternalLink'
 
 export const query = graphql`
 query {
