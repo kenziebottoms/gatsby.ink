@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: '.env',
+})
+
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://kenzie.ink',
@@ -54,10 +58,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-google-spreadsheet',
       options: {
-        spreadsheetId: '1T4CiAnrD1CYl_T5LytMByJdrYIvvRGQWbVIxuDDa2iA',
+        spreadsheetId: process.env.GOOGLE_SPREADSHEET_ID,
         typePrefix: 'GoogleSpreadsheet',
         spreadsheetName: 'Homepage',
-        credentials: require('./googleCredentials.json'),
+        credentials: {
+          private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/gm, '\n'),
+          client_email: process.env.GOOGLE_CLIENT_EMAIL,
+        },
         filterNode: () => true,
         mapNode: (node) => node,
       },
